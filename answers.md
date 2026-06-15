@@ -25,3 +25,7 @@ Explanation: The script utilizes multidimensional arrays indexed by assignment. 
 Command: `awk -f task6.awk Lab03-data.csv`
 Result: Outputs individual student percentages and assigned letter grades.
 Explanation: Implements parallel associative arrays to aggregate 'earned' and 'possible' metrics mapped to individual student entities. The 'END' block extracts these metrics, computes the percentage, and utilizes a cascading 'if/else if' branching logic structure to assign alphabetical grading before outputting to STDOUT. Script: task6.awk.
+## Task 7
+Command: `./run.sh Lab03-data.csv`
+Result: Formatted Task 6 output, strictly sorted alphabetically with static headers.
+Explanation: The Bash wrapper implements rigorous CLI argument validation utilizing extended test evaluations ('-z', '-f'). It orchestrates data flow by calling the external AWK processor, piping STDOUT into a subshell sequence that isolates the header row, and routes the remainder through standard 'sort' utilities. Script: run.sh.
