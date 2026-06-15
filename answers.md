@@ -17,3 +17,7 @@ Explanation: Employs a logical AND ('&&') to filter data, requiring the record t
 Command: `awk -F',' 'NR>1 && $4 < (0.6 * $5) {count++} END {print count+0}' Lab03-data.csv`
 Result: 18
 Explanation: Executes a dynamic mathematical evaluation. Compares the earned points parameter ($4) against a dynamically computed threshold (60% of the maximum points, $5). If the conditional evaluates to true, the failure counter increments. The '+0' forces AWK to output integer 0 to STDOUT if the variable remains uninitialized.
+## Task 5
+Command: `awk -f task5.awk Lab03-data.csv`
+Result: Outputs per-assignment report with dynamic min, max, and float-precision averages.
+Explanation: The script utilizes multidimensional arrays indexed by assignment. It actively evaluates absolute minimums and maximums via relational conditional blocks. The 'END' block computes the mathematical average and pipes it to STDOUT with 'printf' formatting. Script: task5.awk.
