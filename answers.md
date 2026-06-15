@@ -29,3 +29,7 @@ Explanation: Implements parallel associative arrays to aggregate 'earned' and 'p
 Command: `./run.sh Lab03-data.csv`
 Result: Formatted Task 6 output, strictly sorted alphabetically with static headers.
 Explanation: The Bash wrapper implements rigorous CLI argument validation utilizing extended test evaluations ('-z', '-f'). It orchestrates data flow by calling the external AWK processor, piping STDOUT into a subshell sequence that isolates the header row, and routes the remainder through standard 'sort' utilities. Script: run.sh.
+## Bonus
+Command: `awk -f bonus.awk Lab03-data.csv`
+Result: Appends dynamic "CLASS" average to the bottom of the student report.
+Explanation: Integrates global tracking variables initialized in the 'END' block. Iterates through the stored associative arrays to accumulate system-wide totals, effectively computing the mathematical class average before outputting it. Incorporates defensive logic to prevent division-by-zero panics. Script: bonus.awk.
