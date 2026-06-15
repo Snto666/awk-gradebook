@@ -13,3 +13,7 @@ Noah       180
 Sam        175
 Shane      193
 Explanation: Employs a logical AND ('&&') to filter data, requiring the record to bypass the header and exactly match the string literal "FINAL" in the third field ($3). Employs 'printf' for forensic formatting, aligning the string ('%-10s') to the left and the integer ('%3d') to the right for structured terminal output.
+## Task 4
+Command: `awk -F',' 'NR>1 && $4 < (0.6 * $5) {count++} END {print count+0}' Lab03-data.csv`
+Result: 18
+Explanation: Executes a dynamic mathematical evaluation. Compares the earned points parameter ($4) against a dynamically computed threshold (60% of the maximum points, $5). If the conditional evaluates to true, the failure counter increments. The '+0' forces AWK to output integer 0 to STDOUT if the variable remains uninitialized.
