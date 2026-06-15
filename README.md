@@ -1,19 +1,20 @@
 # awk-gradebook
 # Awk Gradebook Reports
-
-**Student:** Santiago Yambay
-**Course:** Systems Engineering — 2nd Semester
-**Parallel:** B
+.
+# Linux Command Auditing & AWK Data Pipelining
+**Author:** Santiago Yambay
+**Course:** Information Systems Engineering — 2nd Semester
+**Location:** UIDE, Quito, Ecuador
 
 ## Project Overview
-This repository contains a series of `awk` and `bash` scripts to process a raw gradebook CSV file and generate useful formatted reports. 
+This repository contains a suite of advanced `awk` and `bash` scripts designed to parse, filter, and audit raw CSV gradebook data. All scripts adhere to strict system administration methodologies, including input validation, variable lifecycle management, and standard I/O stream redirection.
 
-## Tasks Description
-* **Task 1:** Counts the total number of valid assignment submissions excluding the header.
-* **Task 2:** Counts the exact number of unique students using an associative array.
-* **Task 3:** Filters the "FINAL" assignment and formats the output into aligned columns.
-* **Task 4:** Counts the number of failing submissions (below 60% of the maximum score).
-* **Task 5:** Generates a per-assignment report detailing the lowest, highest, and average scores (`task5.awk`).
-* **Task 6:** Computes the weighted percentage for each student and assigns a letter grade (`task6.awk`).
-* **Task 7:** Uses a Bash wrapper (`run.sh`) to execute the Task 6 script and sort the output alphabetically while preserving the header.
-* **Bonus:** Extends Task 6 to include an overall class average at the bottom of the report (`bonus.awk`).
+## Execution Audits
+* **Task 1:** Validates total data records utilizing `awk` structural blocks (`NR`, `END`).
+* **Task 2:** Enforces uniqueness using associative arrays to audit distinct system users.
+* **Task 3:** Implements relational filtering and STDOUT columnar formatting (`printf`).
+* **Task 4:** Executes dynamic mathematical threshold evaluations to track failing states.
+* **Task 5:** Aggregates multi-dimensional data arrays to output min/max metrics (`task5.awk`).
+* **Task 6:** Computes weighted logic flows to assign categorical variables (`task6.awk`).
+* **Task 7:** Orchestrates execution via a Bash wrapper with parameter validation and data sorting (`run.sh`).
+* **Bonus:** Extends structural arrays to compute global operational averages (`bonus.awk`).

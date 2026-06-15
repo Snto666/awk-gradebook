@@ -1,5 +1,5 @@
 # ==============================================================================
-# Weighted Percentage Logic Script (Advanced Documentation)
+# Weighted Percentage Logic Script 
 # Author: Santiago Yambay | Branch: awk_gradebook
 # Repository: Codeberg
 # Description: Computes weighted percentages using parallel arrays and processes

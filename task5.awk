@@ -1,5 +1,5 @@
 # ==============================================================================
-# Per-Assignment Report Script (Advanced Documentation)
+# Per-Assignment Report Script 
 # Author: Santiago Yambay | Branch: awk_gradebook
 # Repository: Codeberg
 # Description: Aggregates assignment data into associative arrays to compute
